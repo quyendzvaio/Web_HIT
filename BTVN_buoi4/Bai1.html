@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        
+        .product-info {
+            margin-left: 20px;
+        }
+        
+        .price {
+            font-size: 24px;
+            color: #d9534f;
+        }
+        
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .details {
+            margin-top: 20px;
+        }
+        
+        .additional-info {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rating {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .star {
+            font-size: 24px;
+            color: #FFD700;
+            /* Màu vàng cho sao */
+        }
+        
+        .star.empty {
+            color: #ccc;
+            /* Màu xám cho sao rỗng */
+        }
+        
+        .share-icons a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        .share-icons a:hover {
+            text-decoration: underline;
+        }
+        
+        .review-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        
+        .review-section textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .related-products {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .product-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .product-item img {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+        
+        .product-details .price {
+            color: #d9534f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="your-image-url.jpg" alt="Hình ảnh sản phẩm">
+        </div>
+        <div class="product-info">
+            <h1>Sản Phẩm A</h1>
+            <p class="price">$49.99</p>
+            <div class="rating">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star empty">★</span>
+            </div>
+            <p>(120 đánh giá)</p>
+            <button class="btn">Thêm vào giỏ hàng</button>
+            <div class="details">
+                <h3>Thông tin chi tiết:</h3>
+                <ul>
+                    <li>Chất liệu: Vải cotton</li>
+                    <li>Màu sắc: Đỏ, Xanh, Vàng</li>
+                    <li>Kích thước: S, M, L, XL</li>
+                    <li>Thương hiệu: Thương Hiệu X</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="additional-info">
+        <h2>Thông tin bổ sung:</h2>
+        <ul>
+            <li>Thành toán an toàn</li>
+            <li>Hỗ trợ khách hàng 24/7</li>
+            <li>Đảm bảo hoàn toàn thịnh tín</li>
+            <li>Cảm kết chất lượng</li>
+            <li>Đổi trả trong 30 ngày</li>
+        </ul>
+
+        <h3>Tính năng nổi bật:</h3>
+        <ul>
+            <li>Thiết kế hiện đại</li>
+            <li>Liên kết bền vững</li>
+            <li>Thích hợp cho mọi dịp</li>
+            <li>Khiển hành mọi thời tiết</li>
+        </ul>
+
+        <h3>Hướng dẫn sử dụng:</h3>
+        <p>Để đảm bảo sản phẩm luôn trong tình trạng tốt nhất, hãy làm theo các hướng dẫn sau:</p>
+        <ul>
+            <li>Giặt nhẹ nhàng ở độ sâu</li>
+            <li>Bảo quản nơi khô ráo</li>
+        </ul>
+
+        <h3>Tính năng đặc biệt:</h3>
+        <ul>
+            <li>Chống nghẹt chắn</li>
+            <li>Vệ sinh dễ dàng</li>
+            <li>Thích hợp kể cả bên dưới</li>
+        </ul>
+
+        <h3>Chia sẻ sản phẩm:</h3>
+        <div class="share-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <h3>Đánh giá sản phẩm:</h3>
+        <div class="rating">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star empty">★</span>
+        </div>
+    </div>
+    <div class="review-section">
+        <h2>Đánh giá sản phẩm:</h2>
+        <textarea placeholder="Nhập đánh giá của bạn..." rows="4"></textarea>
+        <button class="btn">Gửi đánh giá</button>
+    </div>
+
+    <div class="related-products">
+        <h3>Sản Phẩm Liên Quan:</h3>
+        <div class="product-item">
+            <img src="product-b.jpg" alt="Sản Phẩm B">
+            <div class="product-details">
+                <p>Sản Phẩm B</p>
+                <p class="price">$39.99</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="product-c.jpg" alt="Sản Phẩm C">
+            <div class="product-details">
+                <p>Sản Phẩm C</p>
+                <p class="price">$29.99</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
