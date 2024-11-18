@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!-- Khai báo định dạng tài liệu HTML5 -->  
+<html lang="vi"> <!-- Khai báo ngôn ngữ là tiếng Việt -->  
+<head>  
+    <meta charset="UTF-8"> <!-- Thiết lập mã hóa ký tự là UTF-8 -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Đảm bảo trang web hiển thị tốt trên các thiết bị di động -->  
+    <title>Trang Web Của Tôi</title> <!-- Tiêu đề của trang -->  
+    <style>  
+        /* Một số quy tắc CSS để định dạng trang */  
+        body {  
+            font-family: Arial, sans-serif; /* Font chữ cho toàn bộ trang */  
+            margin: 20px; /* Khoảng cách quanh trang */  
+        }  
+        h1 {  
+            font-size: 24px; /* Kích thước chữ cho tiêu đề chính */  
+            font-weight: bold; /* Làm đậm tiêu đề chính */  
+        }  
+        h2 {  
+            font-size: 20px; /* Kích thước chữ cho tiêu đề phụ */  
+        }  
+        img {  
+            max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của trang */  
+            height: auto; /* Giữ tỷ lệ khung hình cho hình ảnh */  
+        }  
+        ul {  
+            list-style-type: none; /* Bỏ dấu chấm đầu dòng trong danh sách */  
+        }  
+        table {  
+            width: 100%; /* Đảm bảo bảng sử dụng toàn bộ chiều rộng của trang */  
+            border-collapse: collapse; /* Hợp nhất các đường viền ô bảng */  
+            margin-top: 20px; /* Khoảng cách giữa hình ảnh và bảng */  
+        }  
+        th, td {  
+            border: 1px solid #000; /* Đường viền cho các ô bảng */  
+            padding: 8px; /* Khoảng cách bên trong ô bảng */  
+            text-align: center; /* Căn giữa nội dung trong ô */  
+        }  
+        th {  
+            background-color: #f2f2f2; /* Màu nền cho tiêu đề bảng */  
+        }  
+        form {  
+            margin-top: 30px; /* Khoảng cách giữa bảng và biểu mẫu */  
+        }  
+        label {  
+            display: block; /* Hiển thị nhãn dưới dạng khối để dễ dàng căn chỉnh */  
+            margin-top: 10px; /* Khoảng cách giữa nhãn và trường nhập */  
+        }  
+        input, select {  
+            width: 100%; /* Chiều rộng 100% cho các trường nhập */  
+            padding: 8px; /* Khoảng cách bên trong trường nhập */  
+            margin-top: 5px; /* Khoảng cách giữa trường nhập và nhãn */  
+            border: 1px solid #ccc; /* Đường viền cho trường nhập */  
+            border-radius: 4px; /* Bo góc cho trường nhập */  
+        }  
+        button {  
+            background-color: #007bff; /* Màu nền cho nút đăng ký */  
+            color: white; /* Màu chữ cho nút */  
+            border: none; /* Bỏ đường viền cho nút */  
+            padding: 10px; /* Khoảng cách bên trong nút */  
+            border-radius: 4px; /* Bo góc cho nút */  
+            cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút */  
+            margin-top: 10px; /* Khoảng cách giữa nút và trường nhập */  
+        }  
+        button:hover {  
+            background-color: #0056b3; /* Màu nền khi di chuột qua nút */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>Chào mừng đến với trang web của tôi!!!</h1> <!-- Tiêu đề chính của trang -->  
+    
+    <h2>Giới thiệu</h2> <!-- Tiêu đề phụ cho phần giới thiệu -->  
+    <p>Tôi là Trần Danh Khang</p> <!-- Thông tin về tên -->  
+    <p>Tôi học lớp KTPM01 - K17</p> <!-- Thông tin về lớp học -->  
+    <p>Tôi đến từ Thái Bình</p> <!-- Thông tin về nơi ở -->  
+    
+    <h2>Đây là tôi</h2> <!-- Tiêu đề cho phần hình ảnh -->  
+    <img src="your-image-url-here.jpg" alt="Hình của tôi" /> <!-- Hình ảnh của người viết -->  
+    
+    <h2>Bảng điểm học tập của tôi</h2> <!-- Tiêu đề cho bảng điểm -->  
+    <table> <!-- Bắt đầu bảng -->  
+        <tr> <!-- Bắt đầu hàng tiêu đề -->  
+            <th>STT</th> <!-- Tiêu đề cột cho số thứ tự -->  
+            <th>Môn học</th> <!-- Tiêu đề cột cho tên môn học -->  
+            <th>Điểm</th> <!-- Tiêu đề cột cho điểm số -->  
+        </tr>  
+        <tr> <!-- Hàng dữ liệu đầu tiên -->  
+            <td>1</td> <!-- Số thứ tự -->  
+            <td>Toán</td> <!-- Tên môn học -->  
+            <td>9.0</td> <!-- Điểm số -->  
+        </tr>  
+        <tr> <!-- Hàng dữ liệu thứ hai -->  
+            <td>2</td>  
+            <td>Lý</td>  
+            <td>8.5</td>  
+        </tr>  
+        <tr> <!-- Hàng dữ liệu thứ ba -->  
+            <td>3</td>  
+            <td>Hóa</td>  
+            <td>7.0</td>  
+        </tr>  
+        <tr> <!-- Hàng dữ liệu thứ tư -->  
+            <td>4</td>  
+            <td>Anh</td>  
+            <td>8.0</td>  
+        </tr>  
+        <tr> <!-- Hàng tổng điểm -->  
+            <td colspan="2">Tổng điểm</td> <!-- Cột tiêu đề cho tổng điểm -->  
+            <td>32.5</td> <!-- Tổng điểm các môn -->  
+        </tr>  
+        <tr> <!-- Hàng điểm trung bình -->  
+            <td colspan="2">Điểm trung bình</td> <!-- Cột tiêu đề cho điểm trung bình -->  
+            <td>8.125</td> <!-- Điểm trung bình của các môn -->  
+        </tr>  
+    </table> <!-- Kết thúc bảng -->  
+
+    <h2>Đăng ký tài khoản</h2> <!-- Tiêu đề cho phần đăng ký tài khoản -->  
+    <form> <!-- Bắt đầu biểu mẫu -->  
+        <label for="username">Tên đăng nhập:</label> <!-- Nhãn cho trường tên đăng nhập -->  
+        <input type="text" id="username" name="username" required> <!-- Trường nhập cho tên đăng nhập -->  
+
+        <label for="password">Mật khẩu:</label> <!-- Nhãn cho trường mật khẩu -->  
+        <input type="password" id="password" name="password" required> <!-- Trường nhập cho mật khẩu -->  
+
+        <label for="confirm-password">Nhập lại mật khẩu:</label> <!-- Nhãn cho trường nhập lại mật khẩu -->  
+        <input type="password" id="confirm-password" name="confirm-password" required> <!-- Trường nhập cho mật khẩu nhập lại -->  
+
+        <label for="email">Email:</label> <!-- Nhãn cho trường email -->  
+        <input type="email" id="email" name="email" required> <!-- Trường nhập cho email -->  
+
+        <label for="fullname">Họ và tên:</label> <!-- Nhãn cho trường họ và tên -->  
+        <input type="text" id="fullname" name="fullname" required> <!-- Trường nhập cho họ và tên -->  
+
+        <label for="birthdate">Ngày sinh:</label> <!-- Nhãn cho trường ngày sinh -->  
+        <input type="date" id="birthdate" name="birthdate" required> <!-- Trường nhập cho ngày sinh -->  
+
+        <label for="class">Lớp:</label> <!-- Nhãn cho trường lớp -->  
+        <select id="class" name="class" required> <!-- Menu chọn lớp -->  
+            <option value="KTPM01">KTPM01</option> <!-- Tùy chọn lớp KTPM01 -->  
+            <option value="KTPM02">KTPM02</option> <!-- Tùy chọn lớp KTPM02 -->  
+            <option value="KTPM03">KTPM03</option> <!-- Tùy chọn lớp KTPM03 -->  
+            <!-- Thêm các lớp khác nếu cần -->  
+        </select>  
+
+        <label>Giới tính:</label> <!-- Nhãn cho lựa chọn giới tính -->  
+        <input type="radio" id="male" name="gender" value="Nam" required> <!-- Lựa chọn Nam -->  
+        <label for="male">Nam</label> <!-- Nhãn cho lựa chọn Nam -->  
+        <input type="radio" id="female" name="gender" value="Nữ" required> <!-- Lựa chọn Nữ -->  
+        <label for="female">Nữ</label> <!-- Nhãn cho lựa chọn Nữ -->  
+
+        <label for="phone">Số điện thoại:</label> <!-- Nhãn cho trường số điện thoại -->  
+        <input type="tel" id="phone" name="phone" required> <!-- Trường nhập cho số điện thoại -->  
+
+        <button type="submit">Đăng ký</button> <!-- Nút để gửi biểu mẫu -->  
+    </form> <!-- Kết thúc biểu mẫu -->  
+</body>  
+</html>
