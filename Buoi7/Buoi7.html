@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: "e055bf";
+        }
+         .container {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 500px;
+            grid-gap: 20px 10px;
+        }  
+        
+        /* @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                background-color: blue;
+
+                /* Một cột duy nhất trên màn hình nhỏ 
+            }
+        }  */      
+        .container .item-1 {
+            background-color: #D5E8D4;
+            grid-area: 1/1/2/8;}
+        
+            .container .item-2 {
+            background-color: #FFF2CD;
+            grid-area: 2/1/5/4;}
+
+            .container .item-3 {
+            background-color:#D9E8FB;
+            grid-area: 2/4/3/6;}
+
+            .container .item-4 {
+            background-color: #F7CECC;
+            grid-area: 3/4/5/5;}
+
+            .container .item-5 {
+            background-color:#F5F5F5;
+            grid-area: 3/6/5/7;}
+            .container .item-6 {
+            background-color: #FFFFFF;
+            grid-area: 1/1/6/1;}
+            .container .item-7 {
+            background-color:#D9E8FB;
+            grid-area: 1/1/6/1;}
+            .container .item-8 {
+            background-color:#E2D5E7;
+            grid-area: 1/1/6/1;}
+            .container .item-9 {
+            background-color: #D5E8D4;
+            grid-area: 1/1/6/1;}
+            .container .item-10 {
+            background-color: #FFF2CD;
+            grid-area: 1/1/6/1;}
+
+            .container .item-11 {
+            background-color: #E2D5E7;
+            grid-area: 1/1/6/1;}
+            .container .item-12 {
+            background-color: #F7CECC;
+            grid-area: 1/1/6/1;}
+        
+            /* tuong duong voi grid-column: span 4;}
+        
+        /* .container {
+            display: grid;
+            grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+        } */
+        
+        /* .header {
+            grid-area: header;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .main {
+            grid-area: main;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+        
+        .sidebar {
+            grid-area: sidebar;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        
+        .footer {
+            grid-area: footer;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="main"></div>
+        <div class="footer"></div>
+    </div>
+    <!-- <div class="container">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+        <div class="item-6"></div>
+        <div class="item-7"></div>
+        <div class="item-8"></div>
+        <div class="item-9"></div>
+        <div class="item-10"></div>
+    </div> -->
+
+</body>
+
+</html>
