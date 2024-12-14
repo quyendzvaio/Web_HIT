@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem tra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+        .nav select {
+            padding: 10px;
+            margin-left: 10px;
+        }
+        
+        .section {
+            padding: 40px;
+            text-align: left;
+        }
+        
+        .section h1 {
+            font-weight: bold;
+        }
+        
+        .courses,
+        .activities,
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #ffffff;
+            width: 200px;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/sinh-nhat.jpg" alt="Header Image">
+        <div class="text-container">
+            <h1>CLB Tin học HIT</h1>
+            <p style="font-weight: bold;">Trường Đại học Công Nghệ Hà Nội</p>
+            <p>Câu lạc bộ Tin học HIT là CLB học thuật trực thuộc khoa công nghệ thông tin trường Đại học Công Nghệ Hà Nội, được thành lập vào ngày 18/9/2010.</p>
+        </div>
+
+        <div class="header">
+            <div class="nav">
+                <label>Chọn: </label>
+                <select>  
+                <option value="board">Ban chủ nhiệm</option>  
+                <option value="about">Về chúng tôi</option>  
+            </select>
+                <select>  
+                <option value="members">Các ban</option>  
+                <option value="courses">Các lớp học</option>  
+                <option value="activities">Hoạt động</option>  
+            </select>
+            </div>
+            <img src="https://hithaui.com/_ipx/q_100/images/logo.png" alt="Logo HIT">
+        </div>
+
+        <div class="section" style="background-color: #f0f8ff; padding: 40px;">
+        </div>
+
+        <div class="section">
+            <h2>BAN CHỦ NHIỆM</h2>
+            <div class="team">
+                <div class="card">
+                    <img src="img/avatar.jpeg" alt="Nguyễn Văn A">
+                    <p>Nguyễn Văn A</p>
+                    <p>Chủ nhiệm</p>
+                </div>
+                <div class="card">
+                    <img src="img/avatar.jpeg" alt="Phó chủ nhiệm hoạt động">
+                    <p>Nguyễn Văn B</p>
+                    <p>Phó chủ nhiệm hoạt động</p>
+                </div>
+                <div class="card">
+                    <img src="img/avatar.jpeg" alt="Phó chủ nhiệm học tập">
+                    <p>Nguyễn Văn C</p>
+                    <p>Phó chủ nhiệm học tập</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>MỘT SỐ HOẠT ĐỘNG</h2>
+            <div class="activities">
+                <div class="card">
+                    <img src="img/sinh-nhat.jpg" alt="Sinh nhật CLB">
+                    <p>Sinh nhật CLB</p>
+                </div>
+                <div class="card">
+                    <img src="img/team-building.jpg" alt="Team building">
+                    <p>Team building</p>
+                </div>
+                <div class="card">
+                    <img src="img/offline.jpg" alt="Offline hàng tháng">
+                    <p>Offline hàng tháng</p>
+                </div>
+                <div class="card">
+                    <img src="img/du-lich.jpg" alt="Du lịch - HIT Travel">
+                    <p>Du lịch - HIT Travel</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>MỘT SỐ LỚP HỌC</h2>
+            <div class="courses">
+                <div class="card">
+                    <img src="data:image/png;base64,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"
+                        alt="Photoshop">
+                    <p>Lớp Graphics</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.webico.vn%2Fkien-thuc-ve-html-p6-html-symbols-ma-ki-tu%2F&psig=AOvVaw12cQhptkHVtZF82kiIedZC&ust=1734233622903000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCK_OyppooDFQAAAAAdAAAAABAE"
+                        alt="HTML5">
+                    <p>Lớp Web</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.cleanpng.com%2Fpng-dkfsjw%2F&psig=AOvVaw2c1CuCxT5yOe4klEC4BRE_&ust=1734233680667000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKia9I2qpooDFQAAAAAdAAAAABAE" alt="Java">
+                    <p>Lớp Java</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.cleanpng.com%2Fpng-eeq9b6%2F&psig=AOvVaw0kXWlzTo_B0_SuZd-Yx-10&ust=1734233738562000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjO3KSqpooDFQAAAAAdAAAAABAK" alt="Python">
+                    <p>Lớp Python</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>HIT - CLB Tin học</h2>
+            <div class="social-icons">
+                <img src="https://www.google.com/imgres?q=logo%20fb&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F05%2FFacebook_Logo_%25282019%2529.png%2F1024px-Facebook_Logo_%25282019%2529.png&imgrefurl=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FT%25E1%25BA%25ADp_tin%3AFacebook_Logo_(2019).png&docid=jRpyc2K7ILy8bM&tbnid=Mml1HslwdZj6nM&vet=12ahUKEwiA5IC8qqaKAxXlma8BHe4XOTQQM3oECBUQAA..i&w=1024&h=1024&hcb=2&ved=2ahUKEwiA5IC8qqaKAxXlma8BHe4XOTQQM3oECBUQAA"
+                    alt="Facebook">
+                <img src="https://www.google.com/imgres?q=logo%20youtube&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2021%2F09%2F11%2F18%2F21%2Fyoutube-6616310_1280.png&imgrefurl=https%3A%2F%2Fpixabay.com%2Fvi%2Fvectors%2Fyoutube-logo-6616310%2F&docid=P4F5mGz4ehFR8M&tbnid=jCCagyW3GFQqQM&vet=12ahUKEwjJhKzTqqaKAxWMn68BHeqWMrIQM3oECB0QAA..i&w=1280&h=917&hcb=2&ved=2ahUKEwjJhKzTqqaKAxWMn68BHeqWMrIQM3oECB0QAA"
+                    alt="Youtube">
+                <img src="https://www.google.com/imgres?q=logo%20gmail&imgurl=https%3A%2F%2Fgenzacademy.vn%2Fwp-content%2Fuploads%2F2020%2F10%2Fgmail-1.jpg&imgrefurl=https%3A%2F%2Fgenzacademy.vn%2Fvi%2Fgmail-tiet-lo-logo-moi-day-hien-dai%2F&docid=Y-Rbr43eXvXqYM&tbnid=7GUk5ulNMRcR2M&vet=12ahUKEwjfv57jqqaKAxUXf_UHHXHeKegQM3oFCIABEAA..i&w=750&h=500&hcb=2&ved=2ahUKEwjfv57jqqaKAxUXf_UHHXHeKegQM3oFCIABEAA"
+                    alt="Gmail">
+            </div>
+        </div>
+
+</body>
+
+</html>
